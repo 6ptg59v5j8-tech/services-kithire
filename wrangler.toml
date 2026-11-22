@@ -1,0 +1,7 @@
+name = "dbavl-kit-hire"
+compatibility_date = "2026-11-22"
+pages_build_output_dir = "./public"
+
+# Add these bindings in Cloudflare Pages > Settings > Functions:
+# D1 binding: DB -> your DBAVL D1 database
+# R2 binding: MEDIA -> your DBAVL media bucket
