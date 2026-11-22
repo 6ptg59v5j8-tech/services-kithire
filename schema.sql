@@ -1,0 +1,21 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS equipment (
+ id TEXT PRIMARY KEY,
+ name TEXT NOT NULL,
+ slug TEXT NOT NULL UNIQUE,
+ category TEXT NOT NULL DEFAULT '',
+ description TEXT NOT NULL DEFAULT '',
+ specifications TEXT NOT NULL DEFAULT '',
+ image_url TEXT NOT NULL DEFAULT '',
+ price TEXT NOT NULL DEFAULT '',
+ is_available INTEGER NOT NULL DEFAULT 1,
+ sort_order INTEGER NOT NULL DEFAULT 0,
+ created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS admin_sessions (
+ token_hash TEXT PRIMARY KEY,
+ expires_at INTEGER NOT NULL,
+ created_at INTEGER NOT NULL DEFAULT (unixepoch())
+);
+CREATE INDEX IF NOT EXISTS idx_equipment_visible ON equipment(is_available,sort_order);
