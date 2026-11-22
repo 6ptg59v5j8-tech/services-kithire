@@ -5,7 +5,7 @@ pages_build_output_dir = "./public"
 [[d1_databases]]
 binding = "DB"
 database_name = "dbavl-db"
-database_id = "REPLACE_WITH_YOUR_NEW_D1_DATABASE_ID"
+database_id = "748020f3-6a73-439e-bf76-7af20b672af4"
 
 [[r2_buckets]]
 binding = "MEDIA"
