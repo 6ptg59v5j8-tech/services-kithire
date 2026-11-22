@@ -2,7 +2,9 @@ const root = document.querySelector('#item-content');
 
 const pathParts = location.pathname.split('/').filter(Boolean);
 const itemIndex = pathParts.indexOf('item');
-const slug = itemIndex >= 0 ? decodeURIComponent(pathParts[itemIndex + 1] || '') : '';
+const pathSlug = itemIndex >= 0 ? decodeURIComponent(pathParts[itemIndex + 1] || '') : '';
+const querySlug = new URLSearchParams(location.search).get('slug') || '';
+const slug = pathSlug || querySlug;
 
 const money = value => new Intl.NumberFormat('en-GB', {
   style: 'currency',
