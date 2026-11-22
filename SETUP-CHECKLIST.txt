@@ -1,0 +1,19 @@
+DBAVL DEPLOYMENT CHECKLIST
+
+[ ] Replace website files in the EXISTING DBAVL GitHub repository.
+[ ] Preserve your real working wrangler.toml and D1 database ID.
+[ ] Run DBAVL-UPDATE.sql once in dbavl-db (check for existing columns first).
+[ ] Confirm D1 binding DB -> dbavl-db.
+[ ] Confirm R2 binding MEDIA -> dbavl-media.
+[ ] Keep ADMIN_EMAIL and ADMIN_PASSWORD secrets configured.
+[ ] Add ENQUIRY_EMAIL = enquiries@dbavl.co.uk.
+[ ] Add RESEND_API_KEY and verified EMAIL_FROM to enable emails.
+[ ] Deploy and test /admin.
+[ ] Test weekly pricing, stock quantities, basket and an enquiry.
+[ ] Check the enquiry appears in Admin -> Enquiries.
+
+Business rules:
+- Weekly pricing only.
+- Stock quantity manually controlled in Admin.
+- Enquiries only; no online booking, payment or stock reservation.
+- Basket total is an estimate, not a confirmed hire.
