@@ -1,5 +1,0 @@
-/admin /admin/index.html 200
-/admin/ /admin/index.html 200
-/item / 302
-/item/ / 302
-/item/* /item.html 200
