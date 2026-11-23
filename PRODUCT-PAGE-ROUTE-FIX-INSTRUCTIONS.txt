@@ -1,0 +1,12 @@
+DBAVL PRODUCT PAGE ROUTE FIX
+
+The product cards now link directly to /item.html?slug=PRODUCT-SLUG instead of relying on the /item/* rewrite. This avoids the Pages route rewrite sending the visitor back to the homepage. The product detail script reads the slug from the query string and still uses the existing /api/equipment/slug/:slug endpoint.
+
+Replace these complete files in your repository:
+- public/site.js
+- public/item.js
+- public/item.html
+
+Keep public/_redirects and all other files as they are. You do not need to run schema.sql or any migration. Do not change D1 or R2 bindings. Existing products and uploaded images are untouched.
+
+After committing/pushing, wait for the Cloudflare Pages deployment to finish, then test a product card. Its URL should look like /item.html?slug=lis7-bk-tiger-t-bar-lighting-stand.
