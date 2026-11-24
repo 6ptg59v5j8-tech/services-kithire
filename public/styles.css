@@ -203,12 +203,22 @@
 @media(max-width:760px){.crew-section{padding:60px 0}.crew-price-grid{grid-template-columns:1fr}.crew-admin-row{grid-template-columns:1fr}.crew-admin-row .wide{grid-column:auto}.crew-price-card{gap:12px}}
 
 
-/* Crew hire terms */
-.crew-terms{margin-top:54px;padding-top:34px;border-top:1px solid #d7d9ce}
-.crew-terms>h3{font-size:clamp(24px,3vw,34px);letter-spacing:-.045em;margin:10px 0 24px}
-.crew-terms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 34px}
+/* Expandable crew hire terms */
+.crew-terms{margin-top:76px;padding-top:0;border-top:0}
+.crew-terms-details{border:1px solid #d7d9ce;border-radius:4px;background:#fafaf6}
+.crew-terms-details summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 28px;cursor:pointer;list-style:none}
+.crew-terms-details summary::-webkit-details-marker{display:none}
+.crew-terms-details summary>span:first-child{display:grid;gap:7px}
+.crew-terms-details summary .eyebrow{font-size:10px}
+.crew-terms-details summary strong{font-size:17px;letter-spacing:-.03em}
+.crew-terms-details summary small{font-size:12px;color:#77796e;line-height:1.6}
+.crew-terms-toggle{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border:1px solid #d7d9ce;border-radius:50%;font-size:22px;line-height:1;color:#19345E;transition:transform .2s ease}
+.crew-terms-details[open] .crew-terms-toggle{transform:rotate(45deg)}
+.crew-terms-content{padding:8px 28px 28px;border-top:1px solid #e1e2d9}
+.crew-terms-content>.eyebrow,.crew-terms-content>h3{display:none}
+.crew-terms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 34px;padding-top:20px}
 .crew-terms-grid>div{min-width:0}
 .crew-terms-grid h4{font-size:13px;margin:0 0 7px;letter-spacing:-.015em}
 .crew-terms-grid p,.crew-terms-note{font-size:12px;line-height:1.8;color:#77796e;margin:0}
 .crew-terms-note{margin-top:26px;padding-top:18px;border-top:1px solid #d7d9ce}
-@media(max-width:760px){.crew-terms-grid{grid-template-columns:1fr;gap:18px}.crew-terms{margin-top:40px;padding-top:28px}}
+@media(max-width:760px){.crew-terms{margin-top:54px}.crew-terms-details summary{padding:20px}.crew-terms-content{padding:6px 20px 22px}.crew-terms-grid{grid-template-columns:1fr;gap:18px}}
