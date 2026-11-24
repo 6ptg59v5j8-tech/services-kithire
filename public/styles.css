@@ -190,3 +190,14 @@
   .card-actions .small-button{flex:1 1 calc(50% - 8px)}
   .item-gallery button{width:74px;height:74px}
 }
+
+/* Crew hire pricing */
+.crew-section{padding:82px 0;background:#f5f5ef;border-top:1px solid #dedfd6}
+.crew-price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.crew-price-card{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:22px;background:#fafaf6;border:1px solid #d7d9ce;border-radius:3px}
+.crew-price-card h3{font-size:16px;letter-spacing:-.03em;margin:0 0 7px}
+.crew-price-card p{font-size:12px;line-height:1.7;color:#77796e;margin:0}
+.crew-price-card strong{font:12px "DM Mono",monospace;white-space:nowrap;color:#19345E}
+.crew-admin-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px;margin:0 0 12px;background:#f5f6ef;border:1px solid #e1e2d9}
+.crew-admin-row .wide{grid-column:1/-1}
+@media(max-width:760px){.crew-section{padding:60px 0}.crew-price-grid{grid-template-columns:1fr}.crew-admin-row{grid-template-columns:1fr}.crew-admin-row .wide{grid-column:auto}.crew-price-card{gap:12px}}
