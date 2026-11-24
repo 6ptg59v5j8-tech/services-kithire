@@ -201,3 +201,14 @@
 .crew-admin-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px;margin:0 0 12px;background:#f5f6ef;border:1px solid #e1e2d9}
 .crew-admin-row .wide{grid-column:1/-1}
 @media(max-width:760px){.crew-section{padding:60px 0}.crew-price-grid{grid-template-columns:1fr}.crew-admin-row{grid-template-columns:1fr}.crew-admin-row .wide{grid-column:auto}.crew-price-card{gap:12px}}
+
+
+/* Crew hire terms */
+.crew-terms{margin-top:54px;padding-top:34px;border-top:1px solid #d7d9ce}
+.crew-terms>h3{font-size:clamp(24px,3vw,34px);letter-spacing:-.045em;margin:10px 0 24px}
+.crew-terms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 34px}
+.crew-terms-grid>div{min-width:0}
+.crew-terms-grid h4{font-size:13px;margin:0 0 7px;letter-spacing:-.015em}
+.crew-terms-grid p,.crew-terms-note{font-size:12px;line-height:1.8;color:#77796e;margin:0}
+.crew-terms-note{margin-top:26px;padding-top:18px;border-top:1px solid #d7d9ce}
+@media(max-width:760px){.crew-terms-grid{grid-template-columns:1fr;gap:18px}.crew-terms{margin-top:40px;padding-top:28px}}
