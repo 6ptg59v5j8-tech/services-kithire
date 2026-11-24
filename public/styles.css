@@ -203,22 +203,36 @@
 @media(max-width:760px){.crew-section{padding:60px 0}.crew-price-grid{grid-template-columns:1fr}.crew-admin-row{grid-template-columns:1fr}.crew-admin-row .wide{grid-column:auto}.crew-price-card{gap:12px}}
 
 
-/* Expandable crew hire terms */
-.crew-terms{margin-top:76px;padding-top:0;border-top:0}
-.crew-terms-details{border:1px solid #d7d9ce;border-radius:4px;background:#fafaf6}
-.crew-terms-details summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 28px;cursor:pointer;list-style:none}
+/* Crew hire — aligned with the site's core visual system */
+.crew-section{padding:76px 0 100px;background:#f5f5ef;border-top:1px solid #dedfd6}
+.crew-price-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+.crew-price-card{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;min-width:0;padding:22px 0;border:0;border-top:1px solid #dedfd6;border-radius:0;background:transparent}
+.crew-price-card h3{font-size:16px;line-height:1.4;letter-spacing:-.04em;margin:0 0 7px;color:#19345E}
+.crew-price-card p{font-size:12px;line-height:1.8;color:#77796e;margin:0}
+.crew-price-card strong{font:11px "DM Mono",monospace;white-space:nowrap;color:#19345E;padding-top:3px}
+.crew-terms{margin-top:62px;padding-top:0;border-top:0}
+.crew-terms-details{border:1px solid #dedfd6;border-radius:3px;background:transparent}
+.crew-terms-details summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 24px;cursor:pointer;list-style:none}
 .crew-terms-details summary::-webkit-details-marker{display:none}
-.crew-terms-details summary>span:first-child{display:grid;gap:7px}
-.crew-terms-details summary .eyebrow{font-size:10px}
-.crew-terms-details summary strong{font-size:17px;letter-spacing:-.03em}
-.crew-terms-details summary small{font-size:12px;color:#77796e;line-height:1.6}
-.crew-terms-toggle{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border:1px solid #d7d9ce;border-radius:50%;font-size:22px;line-height:1;color:#19345E;transition:transform .2s ease}
+.crew-terms-details summary>span:first-child{display:grid;gap:8px}
+.crew-terms-details summary .eyebrow{font:10px "DM Mono",monospace;letter-spacing:.14em;color:#77796e}
+.crew-terms-details summary strong{font:600 16px Manrope,Arial,sans-serif;letter-spacing:-.04em;color:#19345E}
+.crew-terms-details summary small{font:12px/1.7 Manrope,Arial,sans-serif;color:#77796e}
+.crew-terms-toggle{display:grid;place-items:center;flex:0 0 32px;width:32px;height:32px;border:1px solid #c9cabf;border-radius:3px;font:20px Manrope,Arial,sans-serif;line-height:1;color:#19345E;transition:transform .2s ease}
 .crew-terms-details[open] .crew-terms-toggle{transform:rotate(45deg)}
-.crew-terms-content{padding:8px 28px 28px;border-top:1px solid #e1e2d9}
+.crew-terms-content{padding:8px 24px 26px;border-top:1px solid #dedfd6}
 .crew-terms-content>.eyebrow,.crew-terms-content>h3{display:none}
 .crew-terms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 34px;padding-top:20px}
 .crew-terms-grid>div{min-width:0}
-.crew-terms-grid h4{font-size:13px;margin:0 0 7px;letter-spacing:-.015em}
-.crew-terms-grid p,.crew-terms-note{font-size:12px;line-height:1.8;color:#77796e;margin:0}
-.crew-terms-note{margin-top:26px;padding-top:18px;border-top:1px solid #d7d9ce}
-@media(max-width:760px){.crew-terms{margin-top:54px}.crew-terms-details summary{padding:20px}.crew-terms-content{padding:6px 20px 22px}.crew-terms-grid{grid-template-columns:1fr;gap:18px}}
+.crew-terms-grid h4{font:700 12px/1.5 Manrope,Arial,sans-serif;letter-spacing:-.02em;color:#19345E;margin:0 0 7px}
+.crew-terms-grid p,.crew-terms-note{font:12px/1.8 Manrope,Arial,sans-serif;color:#77796e;margin:0}
+.crew-terms-note{margin-top:24px;padding-top:18px;border-top:1px solid #dedfd6}
+@media(max-width:760px){
+ .crew-section{padding:60px 0}
+ .crew-price-grid{grid-template-columns:1fr}
+ .crew-price-card{padding:18px 0;gap:12px}
+ .crew-terms{margin-top:44px}
+ .crew-terms-details summary{padding:18px 16px}
+ .crew-terms-content{padding:6px 16px 20px}
+ .crew-terms-grid{grid-template-columns:1fr;gap:18px}
+}
